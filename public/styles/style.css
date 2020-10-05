@@ -1,0 +1,10 @@
+body{
+    overflow-x: hidden;
+}
+.background-white{
+    background-color: white;
+    padding: 0.5em;
+}
+.noresize{
+    resize: none;
+}
