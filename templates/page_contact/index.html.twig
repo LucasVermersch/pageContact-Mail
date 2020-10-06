@@ -10,14 +10,13 @@
                 <h4 class="card-title">Page Contact</h4>
                 <hr class="my-3">
                 <p class="card-text">Contactez à l'aide de ce formulaire le département de votre choix.</p>
-                <!-- Formulaire d'envoi de mail-->
-                {{ form_start(formulaire) }}
-                {{ form_row(formulaire.nom_envoyeur, {'attr':{'class':'form-control-plaintext background-white'}, 'label':'Entrez votre nom : '}) }}
-                {{ form_row(formulaire.objet_contact, {'attr':{'class':'form-control-plaintext background-white'}, 'label' : "Saisissez l'objet de votre demande de contact :", 'label_attr':{'class': 'pt-2'}}) }}
-                {{ form_row(formulaire.id_departement, {'attr':{'class':'form-control-plaintext background-white'}, 'label' : "Sélectionnez le département à contacter : ", 'label_attr':{'class': 'pt-2'}}) }}
-                {{ form_row(formulaire.message, {'attr':{'class':'form-control-plaintext background-white noresize'}, 'label' : "Saisissez votre message :", 'label_attr':{'class': 'pt-2'}}) }}
-                {{ form_row(formulaire.validez, {'attr': {'class': 'btn btn-secondary mt-3 '}}) }}
-                {{ form_end(formulaire) }}
+                {{ form_start(form) }}
+                {{ form_row(form.nom_envoyeur, {'attr':{'class':'form-control-plaintext background-white'}, 'label':'Entrez votre nom : '}) }}
+                {{ form_row(form.objet_contact, {'attr':{'class':'form-control-plaintext background-white'}, 'label' : "Saisissez l'objet de votre demande de contact :", 'label_attr':{'class': 'pt-2'}}) }}
+                {{ form_row(form.id_departement, {'attr':{'class':'form-control-plaintext background-white'}, 'label' : "Sélectionnez le département à contacter : ", 'label_attr':{'class': 'pt-2'}}) }}
+                {{ form_row(form.message, {'attr':{'class':'form-control-plaintext background-white noresize'}, 'label' : "Saisissez votre message :", 'label_attr':{'class': 'pt-2'}}) }}
+                {{ form_row(form.validez, {'attr': {'class': 'btn btn-secondary mt-3 '}}) }}
+                {{ form_end(form) }}
             </div>
         </div>
     </div>
